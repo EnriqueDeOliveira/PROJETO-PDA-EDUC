@@ -1,0 +1,54 @@
+
+    /* Estilização inicial */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+    /*   Paleta de Cores
+        Blue: #63d3ff
+        White: #ffffff
+        Black: #23192d
+    */
+html{
+    background-color: #63d3ff;
+}s
+
+    /* Estilização do header e Menu */
+
+header, nav, main, footer{
+    border: 1px solid red;
+    margin: 5px;
+}
+
+.Menu{
+    display: flex;
+    justify-content: center;
+}
+
+.Menu > a{
+    margin: 0.2em;
+}
+    /* Estilização do Main */
+.sectionOne, .sectionTwo, .sectionThree, .sectionFour{
+    border: 1px solid green;
+}
+
+.contentPrincipe{
+    display: grid;
+    padding: 0.3em;
+    gap: 0.5em 0.5em;
+    grid-template-areas: "one two";
+    color: #23192d;
+}
+
+.contentPrincipe > section{
+    background-color: #ffffff;;
+}
+
+.sectionOne{
+    grid: "one";
+}
+
+.sectionTwo{
+    grid: "two";
+}
