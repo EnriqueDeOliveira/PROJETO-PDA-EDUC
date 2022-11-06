@@ -55,6 +55,10 @@ html{
     flex-direction: column;
 }
 
+.contentPrincipe>section>article>img{
+    width: 480px;
+}
+
 .sectionOne{
     grid: "one";
     justify-content: space-between;
