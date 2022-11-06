@@ -15,7 +15,7 @@ html{
 
     /* Estilização do header e Menu */
 
-header, nav, main, footer{
+.cabebalho, .Menu, .contentPrincipe, .rodape{
     border: 1px solid red;
     margin: 5px;
 }
@@ -29,7 +29,7 @@ header, nav, main, footer{
     margin: 0.2em;
 }
     /* Estilização do Main */
-.sectionOne, .sectionTwo, .sectionThree, .sectionFour{
+.sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive, .sectionSix{
     border: 1px solid green;
 }
 
@@ -37,18 +37,75 @@ header, nav, main, footer{
     display: grid;
     padding: 0.3em;
     gap: 0.5em 0.5em;
-    grid-template-areas: "one two";
+    grid-template-areas: 
+    "1 2 3"
+    "auto auto auto";
     color: #23192d;
 }
 
+    /* Estilização das seções */
+
+.cabecalhoSection, .contentSection, .contentRodape{
+    border: 1px solid yellow;
+}
+
 .contentPrincipe > section{
-    background-color: #ffffff;;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionOne{
     grid: "one";
+    justify-content: space-between;
+}
+
+.sectionOne > .cabecalhoSection{
+    height: 20%;
+}
+
+.sectionOne > .contentRodape {
+    height: 10%;
+}
+
+.sectionOne > .contentSection{
+    height: 100%;
 }
 
 .sectionTwo{
     grid: "two";
+}
+
+.contentPrincipe > .sectionFour{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionFour>div{
+    margin: 0.1em;
+}
+
+.contentPrincipe>.sectionFive{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.contentPrincipe>.sectionSix{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    gap: 0.1em 0.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.sectionSix> .sugestionAntonio, .sugestionLavinia, .sugestionVictoria, .sugestionEnrique, .sugestionLucas{
+    border: 1px solid orange;
+    margin: 0.01em;
+    width: 20%;
 }
