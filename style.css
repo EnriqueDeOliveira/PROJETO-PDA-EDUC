@@ -1,5 +1,5 @@
-
-    /* Estilização inicial */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+/* Estilização inicial */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +11,7 @@
     */
 html{
     background-color: #63d3ff;
+    font-family: Inter;
 }s
 
     /* Estilização do header e Menu */
@@ -41,27 +42,42 @@ html{
     "1 2 3"
     "auto auto auto";
     color: #23192d;
+    justify-items: center;
 }
 
     /* Estilização das seções */
 
 .cabecalhoSection, .contentSection, .contentRodape{
-    border: 1px solid yellow;
+    border: 1px solid red;
 }
 
 .contentPrincipe > section{
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    padding: 0.5em;
+}
+
+.contentPrincipe>section>.cabecalhoSection{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contentPrincipe>section>div>.cabecalhoSection{
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .contentPrincipe>section>article>img{
     width: 480px;
+    display: block;
+    margin: auto;
 }
 
 .sectionOne{
     grid: "one";
     justify-content: space-between;
+    width: 36.8em;
 }
 
 .sectionOne > .cabecalhoSection{
@@ -78,6 +94,35 @@ html{
 
 .sectionTwo{
     grid: "two";
+    width: 36.8em;
+}
+
+.sectionTwo > .cabecalhoSection{
+    height: 20%;
+}
+
+.sectionTwo > .contentRodape {
+    height: 10%;
+}
+
+.sectionTwo > .contentSection{
+    height: 100%;
+}
+
+.sectionThree{
+    width: 36.8em;
+}
+
+.sectionThree > .cabecalhoSection{
+    height: 20%;
+}
+
+.sectionThree > .contentRodape {
+    height: 10%;
+}
+
+.sectionThree > .contentSection{
+    height: 100%;
 }
 
 .contentPrincipe > .sectionFour{
@@ -85,10 +130,23 @@ html{
     grid-column-end: 4;
     display: flex;
     flex-direction: row;
+
 }
 
 .sectionFour>div{
-    margin: 0.1em;
+    padding: 0.1em;
+}
+
+.sectionFour>div>.cabecalhoSection{
+    height: 15%;
+}
+
+.sectionFour>div>.contentSection{
+    height: 75%;
+}
+
+.sectionFour>div>.contentRodape{
+    height: 10%;
 }
 
 .contentPrincipe>.sectionFive{
@@ -108,8 +166,7 @@ html{
     justify-content: center;
 }
 
-.sectionSix> .sugestionAntonio, .sugestionLavinia, .sugestionVictoria, .sugestionEnrique, .sugestionLucas{
+.sectionSix> .sugestionAntonio{
     border: 1px solid orange;
     margin: 0.01em;
-    width: 20%;
 }
