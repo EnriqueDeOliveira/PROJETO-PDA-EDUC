@@ -170,3 +170,13 @@ html{
     border: 1px solid orange;
     margin: 0.01em;
 }
+
+.rodape{
+     margin: 0 auto;
+        background-color: rgb(4, 40, 107);
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    
+}    
